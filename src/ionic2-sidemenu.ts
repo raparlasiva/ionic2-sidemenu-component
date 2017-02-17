@@ -29,6 +29,7 @@ export class Ionic2Sidemenu {
   @Input()
   pages: Array<Page>;
 
+  @Input()
   rootPage: any;
 
   constructor(private nav: Nav) {}

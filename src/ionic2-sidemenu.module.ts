@@ -2,7 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicModule } from 'ionic-angular';
 
-import { Ionic2Sidemenu } from './ionic2-sidemenu';
+import { Ionic2Sidemenu, Page } from './ionic2-sidemenu';
 
 @NgModule({
   declarations: [
