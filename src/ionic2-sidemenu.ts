@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { Nav } from 'ionic-angular';
 
-export interface Page {
+export class Page {
   icon?: string;
   title: string;
   component: any;
@@ -32,10 +32,12 @@ export class Ionic2Sidemenu {
   @Input()
   rootPage: any;
 
-  constructor(private nav: Nav) {}
+  @ViewChild(Nav) nav: Nav;
+
+  constructor() {}
 
   openPage(page: Page) {
-    this.nav.setRoot(page);
+    this.nav.setRoot(page.component);
   }
 
 }
